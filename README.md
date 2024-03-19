@@ -23,7 +23,7 @@ GoF Design Patterns are divided into three categories:
 * **Factory**: The factory pattern takes out the responsibility of instantiating a object from the class to a Factory class. Also known as **Factory Method Design Pattern**. [UML](https://circle.visual-paradigm.com/factory-method/)
 * **Abstract Factory**: Allows us to create a Factory for factory classes. [UML](https://circle.visual-paradigm.com/abstract-factory/)
 * **Builder**: Creating an object step by step and a method to finally get the object instance. [UML](https://circle.visual-paradigm.com/builder/)
-* **Prototype**: Creating a new object instance from another similar instance and then modify according to our requirements.
+* **Prototype**: Creating a new object instance from another similar instance and then modify according to our requirements. [UML](https://circle.visual-paradigm.com/prototype/)
 
 ## Structural
 * **Adapter**: Provides an interface between two unrelated entities so that they can work together.

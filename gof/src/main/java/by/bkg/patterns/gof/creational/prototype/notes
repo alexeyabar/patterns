@@ -1,0 +1,5 @@
+https://refactoring.guru/design-patterns/prototype
+https://en.wikipedia.org/wiki/Prototype_pattern
+Diagram: https://circle.visual-paradigm.com/prototype/
+
+Example -- Clonable interface. Once implement 'clone' -- you implemented Prototype pattern
