@@ -26,7 +26,7 @@ GoF Design Patterns are divided into three categories:
 * **Prototype**: Creating a new object instance from another similar instance and then modify according to our requirements. [UML](https://circle.visual-paradigm.com/prototype/)
 
 ## Structural
-* **Adapter**: Provides an interface between two unrelated entities so that they can work together.
+* **Adapter**: Provides an interface between two unrelated entities so that they can work together. [UML](https://circle.visual-paradigm.com/adapter/)
 * **Composite**: Used when we have to implement a part-whole hierarchy. For example, a diagram made of other pieces such as circle, square, triangle, etc.
 * **Proxy**: Provide a surrogate or placeholder for another object to control access to it.
 * **Flyweight**: Caching and reusing object instances, used with immutable objects. For example, string pool.
