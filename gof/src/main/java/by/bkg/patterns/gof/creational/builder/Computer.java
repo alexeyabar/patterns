@@ -27,7 +27,7 @@ public class Computer {
         return isBluetoothEnabled;
     }
 
-    private Computer(ComputerBuilder builder) {
+    private Computer(Builder builder) {
         this.HDD = builder.HDD;
         this.RAM = builder.RAM;
         this.isGraphicsCardEnabled = builder.isGraphicsCardEnabled;
@@ -35,7 +35,7 @@ public class Computer {
     }
 
     //Builder Class
-    public static class ComputerBuilder {
+    public static class Builder {
 
         // required parameters
         private String HDD;
@@ -45,17 +45,17 @@ public class Computer {
         private boolean isGraphicsCardEnabled;
         private boolean isBluetoothEnabled;
 
-        public ComputerBuilder(String hdd, String ram) {
+        public Builder(String hdd, String ram) {
             this.HDD = hdd;
             this.RAM = ram;
         }
 
-        public ComputerBuilder setGraphicsCardEnabled(boolean isGraphicsCardEnabled) {
+        public Builder setGraphicsCardEnabled(boolean isGraphicsCardEnabled) {
             this.isGraphicsCardEnabled = isGraphicsCardEnabled;
             return this;
         }
 
-        public ComputerBuilder setBluetoothEnabled(boolean isBluetoothEnabled) {
+        public Builder setBluetoothEnabled(boolean isBluetoothEnabled) {
             this.isBluetoothEnabled = isBluetoothEnabled;
             return this;
         }
