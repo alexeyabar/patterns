@@ -1,0 +1,8 @@
+Create set of "heavy" objects (take much time to create or many resources to store).
+These objects have set of "unique" (extrinsic, they are mutable) and "repeating" (intrinsic, they are immutable) properties.
+Basing on this object -- some actions might be done (e.g., in current code example, Shape instances store information about shape to be drawn. Once drawn -- Shape object might be updated for next drawing)
+
+Probable other example -- messaging (but in single-thread app only). Message is FlyWeight object. Create message and send it.
+
+SIDE EFFECT here: some kind of pipe is needed. I.e. "create Shape 1 -> draw Shape 1 -> create Shape 2 -> draw Shape 2".
+Cannot "create Shape 1 -> create Shape 2 -> draw Shape 1 -> draw Shape 2"
