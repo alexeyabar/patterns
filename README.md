@@ -35,7 +35,7 @@ GoF Design Patterns are divided into three categories:
 * **Composite**: Used when we have to implement a part-whole hierarchy. For example, a diagram made of other pieces such as circle, square, triangle, etc. [UML](https://circle.visual-paradigm.com/composite/)
 * **Proxy**: Provide a surrogate or placeholder for another object to control access to it. [UML](https://circle.visual-paradigm.com/proxy/)
 * **Flyweight**: Caching and reusing object instances, used with immutable objects. For example, string pool. [UML](https://circle.visual-paradigm.com/flyweight/)
-* **Facade**: Creating a wrapper interfaces on top of existing interfaces to help client applications.
+* **Facade**: Creating a wrapper interfaces on top of existing interfaces to help client applications. [UML](https://circle.visual-paradigm.com/facade/)
 * **Bridge**: The bridge design pattern is used to decouple the interfaces from implementation and hiding the implementation details from the client program.
 * **Decorator**: The decorator design pattern is used to modify the functionality of an object at runtime.
 
