@@ -37,7 +37,7 @@ GoF Design Patterns are divided into three categories:
 * **Flyweight**: Caching and reusing object instances, used with immutable objects. For example, string pool. [UML](https://circle.visual-paradigm.com/flyweight/)
 * **Facade**: Creating a wrapper interfaces on top of existing interfaces to help client applications. [UML](https://circle.visual-paradigm.com/facade/)
 * **Bridge**: The bridge design pattern is used to decouple the interfaces from implementation and hiding the implementation details from the client program. [UML](https://circle.visual-paradigm.com/bridge/)
-* **Decorator**: The decorator design pattern is used to modify the functionality of an object at runtime.
+* **Decorator**: The decorator design pattern is used to modify the functionality of an object at runtime. [UML](https://circle.visual-paradigm.com/decorator/)
 
 ## Behavioral
 * **Template Method**: used to create a template method stub and defer some of the steps of implementation to the subclasses.
