@@ -14,13 +14,13 @@ public class SocketClassAdapterImpl extends Socket implements SocketAdapter {
 
     @Override
     public Volt get12Volt() {
-        Volt v = getVoltage();
+        var v = getVoltage();
         return convertVolt(v, 10);
     }
 
     @Override
     public Volt get3Volt() {
-        Volt v = getVoltage();
+        var v = getVoltage();
         return convertVolt(v, 40);
     }
 

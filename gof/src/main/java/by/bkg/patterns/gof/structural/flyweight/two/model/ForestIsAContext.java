@@ -7,15 +7,15 @@ import java.util.Set;
 
 public class ForestIsAContext {
 
-    private Set<TreeIsAFlyweight> trees = new HashSet<>();
+    private final Set<TreeIsAFlyweight> trees = new HashSet<>();
 
     public void plantTree(String treeName, int x, int y, TreeType treeType) {
-        TreeDrawingTemplateIsARepeatedStateIntrinsic drawingTemplate = TreeFactory.getTreeDrawingTemplate(treeType);
+        var drawingTemplate = TreeFactory.getTreeDrawingTemplate(treeType);
         trees.add(new TreeIsAFlyweight(treeName, x, y, drawingTemplate));
     }
 
 
     public void draw() {
-        trees.forEach(tree -> tree.draw());
+        trees.forEach(TreeIsAFlyweight::draw);
     }
 }

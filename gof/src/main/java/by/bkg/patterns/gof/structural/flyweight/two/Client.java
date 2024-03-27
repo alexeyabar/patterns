@@ -7,7 +7,7 @@ import by.bkg.patterns.gof.structural.flyweight.two.model.TreeType;
 public class Client {
 
     public static void main(String[] args) {
-        ForestIsAContext forest = new ForestIsAContext();
+        var forest = new ForestIsAContext();
 
         forest.plantTree("tree 1", generateX(), generateY(), generateTreeType());
         forest.plantTree("tree 2", generateX(), generateY(), generateTreeType());
@@ -27,7 +27,7 @@ public class Client {
     }
 
     private static TreeType generateTreeType() {
-        TreeType[] treeTypes = TreeType.values();
+        var treeTypes = TreeType.values();
         var index = (int) (Math.random() * treeTypes.length);
         return treeTypes[index];
     }

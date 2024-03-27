@@ -8,14 +8,14 @@ public class EncryptionDecorator extends DataSourceDecorator {
     @Override
     public void writeData(Object data) {
         System.out.println("EncryptionDecorator: writing data...");
-        Object encrypted = encryptData(data);
+        var encrypted = encryptData(data);
         super.writeData(encrypted);
     }
 
     @Override
     public Object readData() {
         System.out.println("EncryptionDecorator: reading data...");
-        Object originalData = super.readData();
+        var originalData = super.readData();
         if (isEncrypted(originalData)) {
             return decryptData(originalData);
         }

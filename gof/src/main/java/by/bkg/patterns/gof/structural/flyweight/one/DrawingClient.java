@@ -21,10 +21,10 @@ public class DrawingClient extends JFrame {
     public DrawingClient(int width, int height) {
         this.WIDTH = width;
         this.HEIGHT = height;
-        Container contentPane = getContentPane();
+        var contentPane = getContentPane();
 
-        JButton startButton = new JButton("Draw");
-        final JPanel panel = new JPanel();
+        var startButton = new JButton("Draw");
+        final var panel = new JPanel();
 
         contentPane.add(panel, BorderLayout.CENTER);
         contentPane.add(startButton, BorderLayout.SOUTH);
@@ -33,10 +33,10 @@ public class DrawingClient extends JFrame {
         setVisible(true);
 
         startButton.addActionListener(event -> {
-            Graphics g = panel.getGraphics();
+            var graphics = panel.getGraphics();
             for (int i = 0; i < 20; ++i) {
-                Shape shape = ShapeFactory.getShape(getRandomShape());
-                shape.draw(g, getRandomX(), getRandomY(), getRandomWidth(), getRandomHeight(), getRandomColor());
+                var shape = ShapeFactory.getShape(getRandomShape());
+                shape.draw(graphics, getRandomX(), getRandomY(), getRandomWidth(), getRandomHeight(), getRandomColor());
             }
         });
     }
@@ -66,6 +66,6 @@ public class DrawingClient extends JFrame {
     }
 
     public static void main(String[] args) {
-        DrawingClient drawing = new DrawingClient(500, 600);
+        var drawing = new DrawingClient(500, 600);
     }
 }

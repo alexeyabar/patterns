@@ -9,14 +9,14 @@ public class CompressionDecorator extends DataSourceDecorator {
     @Override
     public void writeData(Object data) {
         System.out.println("CompressionDecorator: writing data...");
-        Object compressedData = compress(data);
+        var compressedData = compress(data);
         super.writeData(compressedData);
     }
 
     @Override
     public Object readData() {
         System.out.println("CompressionDecorator: reading data...");
-        Object originalData = super.readData();
+        var originalData = super.readData();
         if (isCompressed(originalData)) {
             return decompress(originalData);
         }

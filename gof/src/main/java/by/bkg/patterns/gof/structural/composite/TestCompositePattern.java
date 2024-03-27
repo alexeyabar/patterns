@@ -1,19 +1,19 @@
 package by.bkg.patterns.gof.structural.composite;
 
-import by.bkg.patterns.gof.structural.composite.model.basecomponent.Shape;
 import by.bkg.patterns.gof.structural.composite.model.compositeobject.Drawing;
 import by.bkg.patterns.gof.structural.composite.model.leafcomponents.Circle;
 import by.bkg.patterns.gof.structural.composite.model.leafcomponents.Triangle;
 
 // https://www.digitalocean.com/community/tutorials/composite-design-pattern-in-java
+// https://refactoring.guru/design-patterns/composite
 public class TestCompositePattern {
 
     public static void main(String[] args) {
-        Shape tri = new Triangle();
-        Shape tri1 = new Triangle();
-        Shape cir = new Circle();
+        var tri = new Triangle();
+        var tri1 = new Triangle();
+        var cir = new Circle();
 
-        Drawing drawing = new Drawing();
+        var drawing = new Drawing();
         drawing.add(tri1);
         drawing.add(tri1);
         drawing.add(cir);

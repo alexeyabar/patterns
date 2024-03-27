@@ -13,7 +13,7 @@ public class Drawing implements Shape {
 
     @Override
     public void draw(String fillColor) {
-        for (Shape sh : shapes) {
+        for (var sh : shapes) {
             sh.draw(fillColor);
         }
     }

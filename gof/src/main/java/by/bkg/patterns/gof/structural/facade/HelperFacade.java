@@ -10,17 +10,17 @@ public class HelperFacade {
     public static void generateReport(DBTypes dbType, ReportTypes reportType, String tableName) {
         switch (dbType) {
             case MYSQL -> {
-                Connection con = MySqlHelper.getMySqlDBConnection();
-                MySqlHelper mySqlHelper = new MySqlHelper();
+                var con = MySqlHelper.getMySqlDBConnection();
+                var mySqlHelper = new MySqlHelper();
                 switch (reportType) {
                     case HTML -> mySqlHelper.generateMySqlHTMLReport(tableName, con);
                     case PDF -> mySqlHelper.generateMySqlPDFReport(tableName, con);
                 }
             }
             case ORACLE -> {
-                Connection con = OracleHelper.getOracleDBConnection();
-                OracleHelper oracleHelper = new OracleHelper();
-                Object additionalProperties = new Object();
+                var con = OracleHelper.getOracleDBConnection();
+                var oracleHelper = new OracleHelper();
+                var additionalProperties = new Object();
                 switch (reportType) {
                     case HTML -> oracleHelper.generateOracleHTMLReport(tableName, additionalProperties, con);
                     case PDF -> oracleHelper.generateOraclePDFReport(tableName, additionalProperties, con);

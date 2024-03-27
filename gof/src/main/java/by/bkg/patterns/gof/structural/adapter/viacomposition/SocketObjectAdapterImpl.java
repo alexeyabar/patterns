@@ -16,13 +16,13 @@ public class SocketObjectAdapterImpl implements SocketAdapter {
 
     @Override
     public Volt get12Volt() {
-        Volt v = socket.getVoltage();
+        var v = socket.getVoltage();
         return convertVolt(v, 10);
     }
 
     @Override
     public Volt get3Volt() {
-        Volt v = socket.getVoltage();
+        var v = socket.getVoltage();
         return convertVolt(v, 40);
     }
 

@@ -16,16 +16,16 @@ import static by.bkg.patterns.gof.structural.facade.HelperFacade.ReportTypes.PDF
 public class FacadePatternTest {
 
     public static void main(String[] args) {
-        String tableName = "Employee";
+        var tableName = "Employee";
 
         System.out.println("Generating MySql HTML report and Oracle PDF report without using Facade...\n");
-        Connection con = MySqlHelper.getMySqlDBConnection();
-        MySqlHelper mySqlHelper = new MySqlHelper();
+        var con = MySqlHelper.getMySqlDBConnection();
+        var mySqlHelper = new MySqlHelper();
         mySqlHelper.generateMySqlHTMLReport(tableName, con);
 
-        Connection con1 = OracleHelper.getOracleDBConnection();
-        OracleHelper oracleHelper = new OracleHelper();
-        Object oracleReportProperties = new Object();
+        var con1 = OracleHelper.getOracleDBConnection();
+        var oracleHelper = new OracleHelper();
+        var oracleReportProperties = new Object();
         oracleHelper.generateOraclePDFReport(tableName, oracleReportProperties, con1);
 
         System.out.println("==================================================================");

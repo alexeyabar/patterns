@@ -11,7 +11,7 @@ public class ShapeFactory {
     private static final HashMap<ShapeType, Shape> shapes = new HashMap<>();
 
     public static Shape getShape(ShapeType type) {
-        Shape shapeImpl = shapes.get(type);
+        var shapeImpl = shapes.get(type);
 
         if (shapeImpl == null) {
             shapeImpl = switch (type) {
